@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+    <link rel="stylesheet" href="air.css">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Airline booking form</h1>
+        <center>
+        <div>
+            <table>
+                <tr>
+                    <td>From</td>
+                    <td><input type="text"placeholder="Enter your starting point"></td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td><input type="text"placeholder="Enter your destination"></td>
+                </tr>
+                <tr>
+                    <td>Departure date </td>
+
+                       <td> <input type="date"></td>
+                    
+                    <td>Departure Time</td>
+                    
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                   <td>Prefered Airline</td>
+            
+                   <td>
+                   <select>
+                    <option></option>
+                    <option>Air India</option>
+                    <option>Air Asia</option>
+                    <option>Indigo</option>
+                    <option>Alliance Air</option>
+                    <option>Spice Jet</option>
+                   </select>
+                   </td>
+                </tr>
+                <tr>
+                    <td>Preferred Seating</td>
+                
+                    <td>
+                    <select >
+                        <option></option>
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First class</option>
+                    </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Adult <input type="number"></td>
+                    <td>Children(2-11 years) <input type="number"></td>
+                    <td>Infant(under 2 years) <input type="number"></td>
+                </tr>
+                <tr><td>Return Date <input type="date">
+
+                </td>
+                 <td>
+                    Return Time<input type="time">
+                 </td>
+                </tr>
+                <tr> <td>Any Message <input type="text">
+                </td></tr>
+                <tr>
+                    <td>Enter your name <input type="text"></td>
+                    <td>Phone number <input type="number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Your Email<input type="email" placeholder="Enter Email...">
+                </td>
+                        <td>
+                            Enter the OTP<input type="text" placeholder="Enter the OTP sent to your Email..."></td>
+                            <tr>
+                                <tr>
+                            <td>Click to verify<button class="btn">Verify</button>
+                        </td>
+                        <td>
+                        <button class="btn" onclick="sendOTP()">Send OTP</button></td>
+                    <script src="emailotp.js"></script>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+
+                
+            </table>
+
+        </div>
+    </center>
+        
+    </form>
+</body>
+</html>
